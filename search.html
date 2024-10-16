@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Results for "" - The Tobec</title>
+
+    <!-- favicon -->
+    <link rel="shortcut icon" href="img/faviconn.png" type="image/x-icon">
+
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/docs.css">
+
+    <!-- icon -->
+    <link rel="stylesheet" href="css/all.css">
+
+    <!-- animation -->
+    <link rel="stylesheet" href="css/animate.css">
+
+    <!-- media -->
+    <link rel="stylesheet" href="css/media.css">
+
+    <!-- css -->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+    <div id="loader"></div>
+
+    <!-- header -->
+
+    <section class="header text-white">
+        <nav class="navbar navbar-expand-lg p-0">
+            <div class="container-fluid">
+
+                <button class="sticky btn modal-btn border-0 p-0" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+                    <i class="bi bi-list fs-4"></i>
+                </button>
+
+                <div class="col-7 d-grid justify-content-start">
+                    <ul class="navbar-nav text-uppercase fw-semibold">
+                        <li class="nav-item px-4 d-flex align-items-center">
+                            <a aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item d-flex align-items-center">
+                            <div class="dropdown">
+                                <a class="btn p-0 border-0 fw-semibold" role="button">
+                                    Pages<i class="bi bi-chevron-down ms-2"></i>
+                                </a>
+                                <ul class="dropdown-menu py-0 rounded-0">
+                                    <li><a class="dropdown-item" href="team.html">Our team</a></li>
+                                    <li><a class="dropdown-item" href="coming.html">Coming soon</a></li>
+                                    <li><a class="dropdown-item" href="price.html">Pricing plan</a></li>
+                                    <li><a class="dropdown-item" href="faq.html">Faq</a></li>
+                                    <li><a class="dropdown-item" href="error.html">404 error</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="nav-item px-4 d-flex align-items-center">
+                            <a aria-current="page" href="blog.html">Blog</a>
+                        </li>
+                        <li class="nav-item px-4 d-flex align-items-center">
+                            <a aria-current="page" href="about.html">About</a>
+                        </li>
+                        <li class="nav-item px-4 d-flex align-items-center">
+                            <a aria-current="page" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-5 d-flex justify-content-end">
+
+                    <!-- Button trigger modal -->
+
+                    <div class="main-modal pe-3 d-flex justify-content-end">
+                        <input class="border-0 text-white" placeholder="Search ...">
+                        <button type="button" class="btn border-0 d-flex justify-content-end" data-bs-toggle="modal"
+                            data-bs-target="#staticBackdrop">
+                            <i class="fa-solid fa-magnifying-glass fs-6"></i>
+                        </button>
+                    </div>
+
+                    <!-- Modal -->
+
+                    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false"
+                        tabindex="-1" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="d-flex justify-content-center">
+                                        <div class="d-flex border-0 border-1 w-100">
+                                            <input type="text" placeholder="Search ..."
+                                                class="form-control border-0 rounded-0">
+                                            <a href="search.html" class="icon p-2"><i
+                                                    class="fa-solid fa-magnifying-glass fs-6"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </nav>
+
+        <!-- offcanvas -->
+
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasRight">
+            <div class="offcanvas-header">
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <a class="nav-link active me-5 color" aria-current="page" href="index.html">Home</a>
+                <!-- dropdown start-->
+                <div class="dropdown">
+                    <span>Pages</span>
+                    <a class="btn border-0 p-0 my-4" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        <i class="bi bi-chevron-down ms-5 text-black"></i>
+                    </a>
+                    <ul class="dropdown-menu border-0 py-0" style="transform: translate(-37rem, 52px) !important;">
+                        <li><a class="dropdown-item py-3" href="team.html">Our Team</a></li>
+                        <li><a class="dropdown-item py-3" href="team.html">Coming Soon</a></li>
+                        <li><a class="dropdown-item py-3" href="price.html">Pricing plan</a></li>
+                        <li><a class="dropdown-item py-3" href="faq.html">Faq</a></li>
+                        <li><a class="dropdown-item py-3" href="error.html">404 error</a></li>
+                    </ul>
+                </div>
+                <!-- dropdown end -->
+                <a class="nav-link active me-5" aria-current="page" href="about.html">About</a>
+                <a class="nav-link active me-5 my-4" aria-current="page" href="blog.html">Blog</a>
+                <a class="nav-link active me-5" aria-current="page" href="contact.html">Contact</a>
+            </div>
+        </div>
+
+    </section>
+
+
+    <!-- top -->
+
+    <section class="top top-bg wow fadeIn" data-wow-duration="1s">
+        <div class="top-text">
+            <div class="text-inner">
+                <h2 class="h2-80 text-uppercase fw-bold text-white">Search Results for:</h2>
+            </div>
+        </div>
+    </section>
+
+    <!-- section -->
+
+    <section class="section all-margin">
+        <div class="container">
+            <!-- 1 -->
+            <div class="row">
+
+                <div class="col-4 img wow fadeInLeft" data-wow-duration="1s">
+                    <div class="part">
+                        <div class="sec-img">
+                            <a href="team.html"><img src="img/parr-02.jpg" alt="" class="object-fit-cover"></a>
+                        </div>
+                        <a href="team.html" class="text-decoration-none text-black">
+                            <h3 class="fw-medium text-capitalize my-3">Our team</h3>
+                        </a>
+                        <div class="d-flex">
+                            <a href="index.html" class="text-decoration-none text-black">
+                                <p>By Code4rest</p>
+                            </a>
+                            <span class="d-flex">
+                                August 13, 2024
+                            </span>
+                        </div>
+                        <p>Mike Jones Founder Facebook X-twitter <br> Instagram Olive Yew manager Facebook X-
+                            <br>twitter
+                            Instagram Maureen worker Facebook…
+                        </p>
+                        <a class="btn border-0 p-0 text-uppercase text-decoration-underline border-dark"
+                            href="team.html" role="button">Read
+                            More</a>
+                    </div>
+                </div>
+
+                <div class="col-4 img wow fadeInUp" data-wow-duration="1s">
+                    <div class="part">
+                        <div class="sec-img">
+                            <a href="price.html"><img src="img/parr-02.jpg" alt="" class="object-fit-cover"></a>
+                        </div>
+                        <a href="price.html" class="text-decoration-none text-black">
+                            <h3 class="fw-medium text-capitalize my-3">Pricing plan</h3>
+                        </a>
+                        <div class="d-flex">
+                            <a href="index.html" class="text-decoration-none text-black">
+                                <p>By Code4rest</p>
+                            </a>
+                            <span class="d-flex">
+                                August 13, 2024
+                            </span>
+                        </div>
+                        <p>Our Pricing Plans basic 49.99 $ A basic plan for payment Contracts and orders Strategy…</p>
+                        <a class="btn border-0 p-0 text-uppercase text-decoration-underline border-dark"
+                            href="price.html" role="button">Read
+                            More</a>
+                    </div>
+                </div>
+
+                <div class="col-4 wow fadeInRight" data-wow-duration="1s">
+                    <a href="coming.html" class="text-decoration-none text-black">
+                        <h3 class="fw-medium text-capitalize my-3">Coming soon</h3>
+                    </a>
+                    <div class="d-flex mt-3">
+                        <a href="index.html" class="text-decoration-none text-black">
+                            <p>By Code4rest</p>
+                        </a>
+                        <span class="d-flex">
+                            August 13, 2024
+                        </span>
+                    </div>
+                    <p>coming soon! Days Hours Minutes Seconds back <br> to home</p>
+                    <a class="btn border-0 p-0 text-uppercase text-decoration-underline border-dark" href="coming.html"
+                        role="button">Read
+                        More</a>
+                </div>
+
+            </div>
+            <!-- 2 -->
+            <div class="row sec-margin">
+
+                <div class="col-4 wow fadeInLeft" data-wow-duration="1s">
+                    <a href="error.html" class="text-decoration-none text-black">
+                        <h3 class="fw-medium text-capitalize my-3">404 error</h3>
+                    </a>
+                    <div class="d-flex mt-3">
+                        <a href="index.html" class="text-decoration-none text-black">
+                            <p>By Code4rest</p>
+                        </a>
+                        <span class="d-flex">
+                            August 13, 2024
+                        </span>
+                    </div>
+                    <p>404 oops… We Couldn’t find what you’re looking for… back to home page</p>
+                    <a class="btn border-0 p-0 text-uppercase text-decoration-underline border-dark" href="error.html"
+                        role="button">Read
+                        More</a>
+                </div>
+
+                <div class="col-4 img wow fadeInUp" data-wow-duration="1s">
+                    <div class="part">
+                        <div class="sec-img">
+                            <a href="faq.html"><img src="img/parr-02.jpg" alt="" class="object-fit-cover"></a>
+                        </div>
+                        <a href="faq.html" class="text-decoration-none text-black">
+                            <h3 class="fw-medium text-capitalize my-3">Faq</h3>
+                        </a>
+                        <div class="d-flex">
+                            <a href="index.html" class="text-decoration-none text-black">
+                                <p>By Code4rest</p>
+                            </a>
+                            <span class="d-flex">
+                                August 13, 2024
+                            </span>
+                        </div>
+                        <p>Feel free to ask How to Roll Cigars Yourself? It is a long established fact…</p>
+                        <a class="btn border-0 p-0 text-uppercase text-decoration-underline border-dark" href="faq.html"
+                            role="button">Read
+                            More</a>
+                    </div>
+                </div>
+
+                <div class="col-4 img-2 wow fadeInRight" data-wow-duration="1s">
+                    <div class="part">
+                        <div class="sec-img">
+                            <a href="blog1.html">
+                                <img src="img/blog-01.jpg" alt="">
+                            </a>
+                        </div>
+                        <a class="btn border-0 p-0 text-uppercase text-decoration-none Uncategorized-btn mt-4 mb-2"
+                            href="uncategorized.html" role="button">Uncategorized</a>
+                        <a href="blog1.html" class="text-decoration-none text-black">
+                            <h3 class="fw-medium text-capitalize mb-3">Important Facts About Smoking</h3>
+                        </a>
+                        <div class="d-flex">
+                            <a href="index.html" class="text-decoration-none color">
+                                <p>By Code4rest</p>
+                            </a>
+                            <span class="d-flex color">
+                                August 13, 2024
+                            </span>
+                        </div>
+                        <p>Contrary to popular belief, Lorem Ipsum is not simply random text. pendisse id libero
+                            pellentesque,…</p>
+                        <a class="btn border-0 p-0 text-uppercase text-decoration-underline border-dark"
+                            href="blog1.html" role="button">Read
+                            More</a>
+                    </div>
+                </div>
+
+            </div>
+            <!-- 3 -->
+            <div class="row">
+
+                <div class="col-4 img-2 wow fadeInLeft" data-wow-duration="1s">
+                    <div class="part">
+                        <div class="sec-img">
+                            <a href="blog2.html">
+                                <img src="img/blog-02.jpg" alt="">
+                            </a>
+                        </div>
+                        <a class="btn border-0 p-0 text-uppercase text-decoration-none Uncategorized-btn mt-4 mb-2"
+                            href="uncategorized.html" role="button">Uncategorized</a>
+                        <a href="blog2.html" class="text-decoration-none text-black">
+                            <h3 class="fw-medium text-capitalize mb-3">How to Roll Cigars Yourself?</h3>
+                        </a>
+                        <div class="d-flex">
+                            <a href="index.html" class="text-decoration-none color">
+                                <p>By Code4rest</p>
+                            </a>
+                            <span class="d-flex color">
+                                August 13, 2024
+                            </span>
+                        </div>
+                        <p>Contrary to popular belief, Lorem Ipsum is not simply random text. vestibulum turpis.
+                            Pellentesque eu…</p>
+                        <a class="btn border-0 p-0 text-uppercase text-decoration-underline border-dark"
+                            href="blog2.html" role="button">Read
+                            More</a>
+                    </div>
+                </div>
+
+                <div class="col-4 img-2 wow fadeInUp" data-wow-duration="1s">
+                    <div class="part">
+                        <div class="sec-img">
+                            <a href="blog4.html">
+                                <img src="img/blog-04.jpg" alt="">
+                            </a>
+                        </div>
+                        <a class="btn border-0 p-0 text-uppercase text-decoration-none Uncategorized-btn mt-4 mb-2"
+                            href="uncategorized.html" role="button">Uncategorized</a>
+                        <a href="blog4.html" class="text-decoration-none text-black">
+                            <h3 class="fw-medium text-capitalize mb-3">What You Need to Know About Smoking</h3>
+                        </a>
+                        <div class="d-flex">
+                            <a href="index.html" class="text-decoration-none color">
+                                <p>By Code4rest</p>
+                            </a>
+                            <span class="d-flex color">
+                                August 13, 2024
+                            </span>
+                        </div>
+                        <p>Contrary to popular belief, Lorem Ipsum is not simply random text. libero pellentesque,
+                            condimentum dui…</p>
+                        <a class="btn border-0 p-0 text-uppercase text-decoration-underline border-dark"
+                            href="blog4.html" role="button">Read
+                            More</a>
+                    </div>
+                </div>
+
+                <div class="col-4 img-2 wow fadeInRight" data-wow-duration="1s">
+                    <div class="part">
+                        <div class="sec-img">
+                            <a href="blog3.html">
+                                <img src="img/blog-03.jpg" alt="">
+                            </a>
+                        </div>
+                        <a class="btn border-0 p-0 text-uppercase text-decoration-none Uncategorized-btn mt-4 mb-2"
+                            href="uncategorized.html" role="button">Uncategorized</a>
+                        <a href="blog3.html" class="text-decoration-none text-black">
+                            <h3 class="fw-medium text-capitalize mb-3">What is The Best Place for Storing Tobacco?</h3>
+                        </a>
+                        <div class="d-flex">
+                            <a href="index.html" class="text-decoration-none color">
+                                <p>By Code4rest</p>
+                            </a>
+                            <span class="d-flex color">
+                                August 13, 2024
+                            </span>
+                        </div>
+                        <p>Contrary to popular belief, Lorem Ipsum is not simply random text. Suspendisse id libero
+                            pellentesque,…</p>
+                        <a class="btn border-0 p-0 text-uppercase text-decoration-underline border-dark"
+                            href="blog3.html" role="button">Read
+                            More</a>
+                    </div>
+                </div>
+
+            </div>
+            <!-- 4 -->
+            <div class="row sec-margin">
+
+                <div class="col-4 img-2 wow fadeInLeft" data-wow-duration="1s">
+                    <div class="part">
+                        <div class="sec-img">
+                            <a href="blog5.html">
+                                <img src="img/blog-05.jpg" alt="">
+                            </a>
+                        </div>
+                        <a class="btn border-0 p-0 text-uppercase text-decoration-none Uncategorized-btn mt-4 mb-2"
+                            href="uncategorized.html" role="button">Uncategorized</a>
+                        <a href="blog5.html" class="text-decoration-none text-black">
+                            <h3 class="fw-medium text-capitalize mb-3">What is Needed to Roll Cigars?</h3>
+                        </a>
+                        <div class="d-flex">
+                            <a href="index.html" class="text-decoration-none color">
+                                <p>By Code4rest</p>
+                            </a>
+                            <span class="d-flex color">
+                                August 13, 2024
+                            </span>
+                        </div>
+                        <p>Contrary to popular belief, Lorem Ipsum is not simply random text. condimentum dui sed,
+                            vestibulum…</p>
+                        <a class="btn border-0 p-0 text-uppercase text-decoration-underline border-dark"
+                            href="blog5.html" role="button">Read
+                            More</a>
+                    </div>
+                </div>
+
+                <div class="col-4 img-2 wow fadeInUp" data-wow-duration="1s">
+                    <div class="part">
+                        <div class="sec-img">
+                            <a href="blog6.html">
+                                <img src="img/blog-06.jpg" alt="">
+                            </a>
+                        </div>
+                        <a class="btn border-0 p-0 text-uppercase text-decoration-none Uncategorized-btn mt-4 mb-2"
+                            href="uncategorized.html" role="button">Uncategorized</a>
+                        <a href="blog6.html" class="text-decoration-none text-black">
+                            <h3 class="fw-medium text-capitalize mb-3">How to Moisturize Dried Tobacco?</h3>
+                        </a>
+                        <div class="d-flex">
+                            <a href="index.html" class="text-decoration-none color">
+                                <p>By Code4rest</p>
+                            </a>
+                            <span class="d-flex color">
+                                August 13, 2024
+                            </span>
+                        </div>
+                        <p>Contrary to popular belief, Lorem Ipsum is not simply random text. pellentesque, condimentum
+                            dui sed,…</p>
+                        <a class="btn border-0 p-0 text-uppercase text-decoration-underline border-dark"
+                            href="blog6.html" role="button">Read
+                            More</a>
+                    </div>
+                </div>
+
+                <div class="col-4 img wow fadeInRight" data-wow-duration="1s">
+                    <div class="part">
+                        <div class="sec-img">
+                            <a href="contact.html"><img src="img/parr-02.jpg" alt="" class="object-fit-cover"></a>
+                        </div>
+                        <a href="contact.html" class="text-decoration-none text-black">
+                            <h3 class="fw-medium text-capitalize my-3">Contact us</h3>
+                        </a>
+                        <div class="d-flex">
+                            <a href="index.html" class="text-decoration-none text-black">
+                                <p>By Code4rest</p>
+                            </a>
+                            <span class="d-flex">
+                                August 13, 2024
+                            </span>
+                        </div>
+                        <p>Try them out right now Get in touch now Apparently we had reached a great…</p>
+                        <a class="btn border-0 p-0 text-uppercase text-decoration-underline border-dark"
+                            href="contact.html" role="button">Read
+                            More</a>
+                    </div>
+                </div>
+
+            </div>
+            <!-- 5 -->
+            <div class="row">
+
+                <div class="col-4 img wow fadeInLeft" data-wow-duration="1s">
+                    <div class="part">
+                        <div class="sec-img">
+                            <a href="about.html"><img src="img/parr-02.jpg" alt="" class="object-fit-cover"></a>
+                        </div>
+                        <a href="about.html" class="text-decoration-none text-black">
+                            <h3 class="fw-medium text-capitalize my-3">About us</h3>
+                        </a>
+                        <div class="d-flex">
+                            <a href="index.html" class="text-decoration-none text-black">
+                                <p>By Code4rest</p>
+                            </a>
+                            <span class="d-flex">
+                                August 13, 2024
+                            </span>
+                        </div>
+                        <p>About company The products offered in our store will be appreciated by true connoisseurs of…
+                        </p>
+                        <a class="btn border-0 p-0 text-uppercase text-decoration-underline border-dark"
+                            href="about.html" role="button">Read
+                            More</a>
+                    </div>
+                </div>
+
+                <div class="col-4 img wow fadeInUp" data-wow-duration="1s">
+                    <div class="part">
+                        <div class="sec-img">
+                            <a href="blog.html"><img src="img/parr-02.jpg" alt="" class="object-fit-cover"></a>
+                        </div>
+                        <a href="blog.html" class="text-decoration-none text-black">
+                            <h3 class="fw-medium text-capitalize my-3">Blog</h3>
+                        </a>
+                        <div class="d-flex">
+                            <a href="index.html" class="text-decoration-none text-black">
+                                <p>By Code4rest</p>
+                            </a>
+                            <span class="d-flex">
+                                August 13, 2024
+                            </span>
+                        </div>
+                        <a class="btn border-0 p-0 text-uppercase text-decoration-underline border-dark"
+                            href="blog.html" role="button">Read
+                            More</a>
+                    </div>
+                </div>
+
+                <div class="col-4 wow fadeInRight" data-wow-duration="1s">
+                    <a href="index.html" class="text-decoration-none text-black">
+                        <h3 class="fw-medium text-capitalize my-3">Home</h3>
+                    </a>
+                    <div class="d-flex mt-3">
+                        <a href="index.html" class="text-decoration-none text-black">
+                            <p>By Code4rest</p>
+                        </a>
+                        <span class="d-flex">
+                            August 13, 2024
+                        </span>
+                    </div>
+                    <p>About company The products offered in our store will be appreciated by true connoisseurs of…</p>
+                    <a class="btn border-0 p-0 text-uppercase text-decoration-underline border-dark" href="index.html"
+                        role="button">Read
+                        More</a>
+                </div>
+
+            </div>
+
+            <div class="row d-grid justify-content-center mt-4">
+                <p class="mb-0">End of content</p>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- footer -->
+
+    <section class="footer border-top">
+        <div class="container">
+            <div class="row d-grid justify-content-center">
+                <div class="inner d-block">
+                    <form>
+                        <input type="email" class="border-0 w-100 text-center mb-3" placeholder="Enter Email" required>
+                        <button
+                            class="btn footer-btn bg-btn text-uppercase fw-medium rounded-0 border border-1 border-color w-100">subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="row">
+                <ul class="d-flex justify-content-center mb-0 text-uppercase">
+                    <li class="list-group-item"><a href="index.html" class="text-decoration-none">Home</a>
+                    </li>
+                    <li class="list-group-item"><a href="about.html" class="text-decoration-none">About</a>
+                    </li>
+                    <li class="list-group-item "><a href="faq.html" class="text-decoration-none">FAQ</a>
+                    </li>
+                    <li class="list-group-item"><a href="error.html" class="text-decoration-none">404</a>
+                    </li>
+                    <li class="list-group-item"><a href="contact.html" class="text-decoration-none">Contact</a>
+                    </li>
+                    <li class="list-group-item"><a href="blog.html" class="text-decoration-none">Blog</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-end text-center py-3">
+            <p class="mb-0">© 2024 - Html Theme by Code4rest</p>
+        </div>
+        <div class="fix-btn">
+            <a href="#" class="btn position-fixed rounded-0 border border-1 border-white">
+                <i class="bi bi-chevron-up text-white"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- all -->
+    <script src="js/jquery.min.js"></script>
+
+    <!-- animation -->
+    <script src="js/wow.min.js"></script>
+
+    <!-- bootstrap -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+    <!-- custom -->
+    <script src="js/custom.js"></script>
+
+</body>
+
+</html>
